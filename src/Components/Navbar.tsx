@@ -34,15 +34,19 @@ export default function NavBar() {
     },
     {
       name: "Produtos",
-      href: "/produtos/all",
-      current: route.pathname.includes("/produtos/") ? true : false,
+      href: "/products/all",
+      current: route.pathname.includes("/products/") ? true : false,
     },
     {
       name: "Meus pedidos",
       href: "/checkout/pending",
       current: route.pathname == "/checkout/pending" ? true : false,
     },
-    { name: "Entre em Contato", href: "/contact", current: false },
+    {
+      name: "Entre em Contato",
+      href: "/contact",
+      current: route.pathname == "/contact" ? true : false,
+    },
   ];
   const [aberto, setOpen] = useState(false);
 
